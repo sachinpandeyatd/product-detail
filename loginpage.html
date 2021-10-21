@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+      h1 {
+        margin: 15%;
+      }
+
+       body {
+        background:linear-gradient(to right bottom, green,yellow)no-repeat;
+        /* Background:linear-gradient is that thing by which we can set the colour to 
+        background */
+         height: 80vh;
+        /* bg is used to set bg image and no repeat is used to do not repeat the image */
+         background: url(https://www.teahub.io/photos/full/1-12156_music-background-images-hd.png) no-repeat;
+         /*backgorund:url() means to put any image on the background  */
+        background-size: cover;
+        /*stretches bacground image to full screen  */
+         background: linear-gradient(to bottom, green rgb(29, 29, 27)) no-repeat ,url(https://www.teahub.io/photos/full/1-12156_music-background-images-hd.png);
+       }
+
+      .MYcard {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.822);
+        width: 25%;
+        border-radius: 5px;
+        margin: 10% auto;
+        padding: 3%;
+        box-sizing: border-box;
+      }
+
+      .my-input,
+      .my-btn {
+        display: block;
+        margin-top: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 3px 3px 5px 2px rgb(12, 11, 11);
+        /* box-shadow:x-offset y-offset -blur size color */
+      }
+
+      .my-input {
+        width: 100%;
+        padding: 5;
+        border: radius 10px;
+      }
+      .my-input:active{
+        background-color: yellow;
+        outline:10px solid green ;
+/* active works when we click and we do not click it return to its first state */
+      }
+
+      .my-input:focus{
+        background-color: rgba(0, 4, 255, 0.103);
+        /* works when the cursor will blink  */
+      }
+
+      .my-btn {
+        margin-top: 15%;
+        box-sizing: border-box;
+        background-color: green;
+        border-radius: 20px;
+        width: 100%;
+        color: white;
+        border: none;
+        transition: 300ms;
+        /* transition is used to tell the time length that afer how many time 
+        this should take effect */
+      }
+
+      .my-btn:hover {
+        transform: translateY(-10px);
+        /* transform is used to hover top bottom of any thing anf translate is ised to decide that in which 
+    direction you want to hover top or left and by how much */
+      }
+
+      .form-logo {
+        width: 60%;
+        display: block;
+        margin: auto;
+      }
+
+      .subheader {
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+        font-size: 0.8em;
+      }
+
+      .subheader span {
+        margin: 10px;
+      }
+
+      #active {
+        text-decoration: underline green;
+        font-size: 20px;
+      }
+      .sign-in {
+        font-size: 20px;
+      }
+
+      .remember {
+        margin: 10px 5px;
+        color: white;
+      }
+
+      .link {
+        display: block;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="MYcard">
+      <img class="form-logo" src="mylogo.jpg" alt="" />
+
+      <div class="subheader">
+        <span id="active">SIGN IN</span>
+        <span class="sign-in">SIGN UP </span>
+      </div>
+     
+      <input placeholder="USERNAME" class="my-input" type="text" />
+      <input placeholder="PASSWORD" class="my-input" type="text" />
+
+      <div class="remember">
+        <input type="checkbox" />
+        <span>REMEMBER ME</span>
+      </div>
+      <button class="my-btn">SUBMIT</button>
+      <a class="link" href="">FORGOT PASSWORD</a>
+    </div>
+  </body>
+</html>
